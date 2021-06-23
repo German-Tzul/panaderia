@@ -1,0 +1,50 @@
+{% extends 'panaderia/base.html' %}
+
+{% block contenido %}
+<div class="card shadow text-center">
+    <div class="card-header">
+    <h1 class="text-center">Detalle de la factura de ventas</h1>
+    </div>
+    <div class="card-body ">
+        <div class="d-flex justify-content-center">
+          <form method="post">
+     <table>
+        <thead>
+        <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>SubTotal</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% csrf_token %}
+            {{ formset.management_form }}
+            {% for form in formset %}
+                <tr>
+                {{ form.id }}
+                <th>{{ form.producto }}</th>
+                <th>{{ form.cantidad }}</th>
+                <th>{{ form.precio }}</th>
+                <th>{{ form.sub_total }}</th>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        <br>    
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}      
+        <button type="submit" class="btn btn-success">Guardar Información</button>
+    </form>
+    </div><!--flex-box-->
+    </div><!--card-body-->
+</div><!--card-->
+{% endblock contenido %}
+
+
+

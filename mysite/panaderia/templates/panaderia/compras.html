@@ -1,0 +1,24 @@
+{% extends 'panaderia/base.html' %}
+
+{% block contenido %}
+<div class="card">
+  <div class="card-header">
+    Crear una nueva factura de compras
+  </div>
+  <div class="card-body">
+  <form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+    <label for="id_proveedor" class="form-label">Nombre del proveedor</label>
+    <input type="text" class="form-control" name="proveedor" id="id_proveedor" placeholder="nombre del proveedor" required>
+    </div>
+    <div class="mb-3">
+    <label for="id_factura" class="form-label">Numero de la factura</label>
+    <input type="text" class="form-control" name="factura" 
+    id="id_factura" placeholder="Numero de la factura" required>
+    </div>
+    <button type="submit" class="btn btn-success">Guardar Información</button>
+    </form>
+  </div>
+</div>
+{% endblock contenido %}

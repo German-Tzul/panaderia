@@ -1,0 +1,37 @@
+{% extends 'panaderia/base.html' %}
+{% block contenido %}
+<div class="card text-center">
+    <div class="card-header">
+    <h1 class="text-center">Detalle de la factura de compras</h1>
+    </div>
+    <div class="card-body ">
+        <div class="d-flex justify-content-center">
+          <form method="post">
+     <table>
+        <thead>
+        <tr>
+        <th>Producto</th>
+        <th>Peso</th>
+        <th>Cantidad</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% csrf_token %}
+            {{ formset.management_form }}
+            {% for form in formset %}
+                <tr>
+                {{ form.id }}
+                <th>{{ form.inventario }}</th>
+                <th>{{ form.peso }}</th>
+                <th>{{ form.cantidad }}</th>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        <br>          
+        <button type="submit" class="btn btn-success">Guardar Información</button>
+    </form>
+    </div><!--flex-box-->
+    </div><!--card-body-->
+</div><!--card-->
+{% endblock contenido %}

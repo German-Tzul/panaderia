@@ -1,0 +1,43 @@
+{% extends 'panaderia/base.html' %}
+
+{% block contenido %}
+<div class="card">
+  <div class="card-header">
+    <h1 class="text-center">Inventario</h1>
+  </div>
+  <div class="card-body">
+  <table class="table">
+<thead>
+<tr> 
+      <th scope="col">Codigo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Existencia</th>
+</tr> 
+</thead>
+<tbody>
+{% if inventario %}
+    {% for producto in inventario %}
+<tr> 
+        <th scope="col"><a class="btn btn-primary"
+        href="{% url 'panaderia:producto' producto.id %}">
+        {{ producto.id}}</a>
+        </th>
+        <th scope="col">{{ producto.nombre }}</th>
+        <th scope="col">{{ producto.cantidad }}</th>
+</tr> 
+    {% endfor %}    
+{% else %}
+<p>lista vacia</p>
+{% endif %}
+</tbody>
+</table>
+
+
+    
+  </div>
+</div>
+{% endblock contenido %}
+
+
+
+

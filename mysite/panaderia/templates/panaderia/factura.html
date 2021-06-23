@@ -1,0 +1,17 @@
+{% extends 'panaderia/base.html' %}
+{% block contenido %}
+<div class="card">
+  <div class="card-header">
+    Factura
+  </div>
+  <div class="card-body">
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submmit" class="btn btn-success">Guardar Información</button>
+  </form>
+  </div>
+</div>
+{% endblock contenido %}
+    
+

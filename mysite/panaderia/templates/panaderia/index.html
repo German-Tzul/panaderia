@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shadows+Into+Light&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href=" {% static "panaderia/css/style.css" %}">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <title>Panificadora la Esperanza</title>
+  </head>
+  <body>
+  <header id="inicio">
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <img src="{% static 'panaderia/img/logo.jpg' %}" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
+        Esperanza
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#inicio">INICIO</a>
+            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+            <a class="nav-link" href="#servicios">SERVICIOS</a>
+            <a class="nav-link" href="#contacto">CONTACTO</a>
+            <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <!--###############-->
+    <div class="head">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+        <p>PAN FRESCO</p>
+        <p>DELICIOSO SABOR</p>
+        </div>
+    </div>
+    <!--#############-->
+  </header>
+  <!--###############-->
+  <!--###############-->
+  <div class="container">
+  <section id="nosotros">
+  <hr>
+  <div>
+  <p class="titulo-dos text-center mb-0">EL MEJOR PAN TRADICIONAL</p>
+  <p class="text-center sub-titulo mb-5">se encuentra en panificadora la esperanza</p>
+
+  </div>
+  <div class="row">
+    <!--############-->
+  <div class=" headl col-12 col-sm-12 col-md-6 mb-3">
+    <img src="{% static 'panaderia/img/header-dos.jpg' %}" class="img-fluid" alt="Responsive image"> 
+  </div><!--end col-left-->
+  <!--######-->
+  <!--######-->
+  <div class="col-12 col-sm-12 col-md-6 mb-3">
+    <div class=" headline h-100 d-flex flex-column justify-content-center align-items-ceenter">
+      <p class="titulo mb-0 text-center">Panaderia la Esperanza</p>
+      <p class="sub-titulo text-center">Tu panaderia de confianza</p>
+      <p class="text-center mb-0">
+      En panaderia la Esperanza te ofrecemos el mejor pan con una gran variedad, contamos con más de 30 años al servicio de los Totonicapenses. Sin faltar los pasteles para toda ocasión, Xecas, empanadas, pan integral y mucho más visitanos sera un gusto poder atenderte.  
+      </p><strong class="text-center mb-0">Dirección 5ta calle zona 3 Totonicapán</strong>
+      <strong class="text-center">Telefono 7766-2314</strong>
+    </div>
+  </div><!--fin col-raigth-->
+  <!--######-->
+  <!--######-->
+  <div class="col-12 col-sm-12 col-md-6 mb-3">
+  <p class="text-center">Realizamos todo tipo de encargos, pan de yemas, pasteles y mucho mas, ademas contamos con servicio de cafetería, visitanos y ven a pasar un momento agradable.
+  </p>
+  </div><!--end col-->
+  <!--####-->
+  <!--####-->
+  <div class="col-12 col-sm-12 col-md-6 mb-3">
+      <p class="text-center sub-titulo">siguenos en nuestras redes sociales</p>
+      <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/Panader%C3%ADa-La-Esperanza-2212291308801738"
+        target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>  
+        </a>
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </div>
+  </div><!--end col-->
+  <!--####-->
+  </div> <!--fin row-->
+  </section>
+  <!--#######-->
+  <!--#######-->
+
+  <section id="servicios">
+      <p class="text-center fw-bold">Nuestros servicios</p>
+    <div class="row">
+  <!--####-->
+  <div class="col-12 col-sm-12 col-md-3 mb-3">
+    <div class="card">
+    <div class="text-center">
+    <img src="{% static 'panaderia/img/cafeteria.svg' %}" class="fluid rounded-circle shadow border" alt="Responsive image" width="80" height="80"> 
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Servicio de cafetería  </h5>
+        <p class="card-text">
+        Contamos con servicios de cafetería
+        para que vengas a pasar un momento 
+        agradable con tu familia.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--####-->
+  <!--####-->
+  <div class="col-12 col-sm-12 col-md-3 mb-3">
+    <div class="card">
+    <div class="text-center">
+    <img src="{% static 'panaderia/img/pasteleria.svg' %}" class="fluid rounded-circle shadow border" alt="Responsive image" width="80" height="80"> 
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Pasteles especiales</h5>
+        <p class="card-text">
+        Elaboramos pasteles especiales
+        para boda,  15  años, día de la madre
+        de acuerdo a tus preferencias.
+        </p>
+      </div>
+     </div>
+  </div>
+  <!--####-->
+  <!--####-->
+  <div class="col-12 col-sm-12 col-md-3 mb-3">
+    <div class="card">
+    <div class="text-center">
+    <img src="{% static 'panaderia/img/encargos.svg' %}" class="fluid rounded-circle shadow border" alt="Responsive image" width="80" height="80"> 
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Recibimos encargos</h5>
+        <p class="card-text">
+        Realizamos todo tipo de encargos
+        desde pasteles,  pan tradicional de yemas
+        pan integral etc.
+        </p>
+      </div>
+     </div>
+  </div>
+  <!--####-->
+  <!--####-->
+  <div class="col-12 col-sm-12 col-md-3 mb-3">
+    <div class="card">
+    <div class="text-center">
+    <img src="{% static 'panaderia/img/panes.svg' %}" class=" s fluid rounded-circle shadow border" alt="Responsive image" width="80" height="80"> 
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Pan para toda ocasión</h5>
+        <p class="card-text">
+        Atendemos todos los días en nuestras dos sucursales
+        con pan fresco elaborado con materiales de calidad.
+        </p>
+      </div>
+     </div>
+  </div>
+  <!--####-->
+  </div><!--row-->
+  <!--####-->
+  <!--####-->
+  <div class="testimonios">
+<br>
+  <p class="text-center fs-3 fw-bold">TESTIMONIOS</p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="{% static 'panaderia/img/jacobo.jpg' %}" alt="" width="75" height="75" class="d-inline-block align-text-top rounded-circle">
+        <div class="comentario d-flex justify-content-center align-items-center text-center">
+        <p>Muy buen servicio excelente calidad del producto</p>
+        </div>
+        Jacobo Ajpacaja
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="{% static 'panaderia/img/jhonny.jpg' %}" alt="" width="75" height="75" class="d-inline-block align-text-top rounded-circle">
+        <div class="comentario d-flex justify-content-center align-items-center text-center">
+        <p>Un ambiente agradable, muy amable el personal recomendable</p>
+        </div>
+        Jhonny Morales
+      </div>
+    </div>
+    <div class="carousel-item">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="{% static 'panaderia/img/marlon.jpg' %}" alt="" width="75" height="75" class="d-inline-block align-text-top rounded-circle">
+        <div class="comentario d-flex justify-content-center align-items-center text-center">
+        <p>Pasar un momento tranquilo con mi familia no tiene precio recomendado</p>
+        </div>
+        Marlon Mendez
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+   
+  <!--####-->
+  <!--####-->
+  </section><!--servicios-->
+  </div><!--fin container-->
+
+  <footer id="contacto">
+  <div class="container">
+  <hr>
+  <div class="row">
+  <div class="col-12 col-sm-12 col-md-4">
+  <p class="text-lowercase fs-3 fw-italic">Servicios</p>
+  <p class="mb-3">Cafetería</p>
+  <p class="mb-3">Pasteles especiales</p>
+  <p class="mb-3">Pan de yemas</p>
+  <p>Pan de tosa ocasión</p> 
+  </div>
+  <div class="col-12 col-sm-12 col-md-4">
+  <p class="text-lowercase fs-3 fw-italic">Información de contacto</p>
+  <p class="mb-3">5ta calle zona 3 Totonicapán, Guatemala</p>
+  <p class="mb-3">7766-2314</p>
+  <p>panificadoraesperanza@gmail.com</p>  
+  </div>
+  <div class="col-12 col-sm-12 col-md-4">
+  <p class="text-lowercase fs-3 fw-italic">Horario de apertura</p>
+  <p class="mb-3">Dias Habiertos:</p>
+  <p class="mb-0">Lunes-Sabado: 9am a 8pm</p>
+  <p>Domingos: 9am a 5pm</p>
+  <p class="mb-3">Dias Festivos:</p>
+  <p>Todos los dias de 9am a 10pm</p>
+  </div>
+  </div>
+  </div>
+  </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.headline', {
+        duration: 3000,
+        origin: 'left',
+        distance: '-100px'
+      });
+      sr.reveal('.headl', {
+        duration: 3000,
+        origin: 'raigth',
+        distance: '-100px'
+      });
+    </script>
+  </body>
+</html>

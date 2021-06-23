@@ -1,0 +1,30 @@
+{% extends 'panaderia/base.html' %}
+{% block contenido %}
+<div class="card">
+  <div class="card-header">
+    <h1 class="text-center">{{ inventario.nombre }}</h1>
+  </div>
+  <div class="card-body">
+   <table class="table">
+<thead>
+<tr>
+<th>Factura</th>
+<th>Peso</th>
+<th>Cantidad</th>
+</tr>
+</thead>
+<tbody>
+{% for productos in inventario.detallecompras_set.all %}
+<tr>
+<th>{{ productos.factura }}</th>
+<th>{{ productos.peso }}</th>
+<th>{{ productos.cantidad }}</th>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+  </div>
+</div>
+{% endblock contenido %}
+
+

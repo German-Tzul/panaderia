@@ -1,0 +1,78 @@
+Manual de usuario 
+DESCRIPCIÓN DE LA APLICACIÓN:
+ El cliente desea llevar el control del producto que tiene un su bodega
+normalmente lo compran en quintal y aveces en libra. 
+Por lo que se pensó manejar todo el libras para mejor control.
+
+Usuario:
+admin
+Contraseña:
+admin
+
+PRODUCTO INGRESADO
+COMPRAS
+Se hizo una factura de compras
+USUARIO:
+1 ingresa el nombre del proveedor
+2 ingresa el numero de la factura
+3 guardar información 
+
+La aplicación lo dirige al detalle de la factura de compra
+En esa pantalla nos muestra los productos que maneja
+como arina, azúcar, manteca etc
+
+USUARIO:
+1 elegir productos
+2 elegir el peso
+3 ingresar cantidad
+4. guardar información 
+
+como el cliente quiere que se maneja en libras. Cuando el peso es en quintal
+lo pasa a libras, cuando es en libras así se queda todo eso se suma al inventario de productos
+
+PRODUCTO CONSUMIDO
+También desea llevar el control del producto consumido durante el día
+por lo que se creo una pantalla de producto utilizado
+
+1 elegir el inventario
+2 elegir el peso
+3 ingresar la cantidad
+4. guardar información 
+la aplicación calcula todo y lo resta al inventario para que se lleve mejor control de la 
+existencia del producto
+
+
+DETALLE DE LAS VENTAS REALIZADAS DURANTE EL DÍA:
+se creo la pantalla de factura
+Usuario:
+1. ingresar nombre del cliente
+2. ingresar nit o consumido final cf
+3. guardar información 
+
+Detalle de la factura:
+El cliente desea que  la aplicación realiza los cálculos respectivos de lo que se vende
+por lo que se considero en que solo elija el producto y la cantidad al guardarlo 
+se calcula solo el total recibido.
+
+
+
+
+Usuario:
+1. Elegir el productos
+2. Ingresar la cantidad
+3. guarda información.
+
+Control del inventario:
+Usuario:
+1 código del inventario
+2 nombre del producto
+3 disponibilidad
+
+Dar click en el código no mostrara las facturas que se han comprado de cada producto.
+
+
+Detalles de la aplicación:
+Necesita registrarse para poder utilizarlo como la aplicación no es muy grande el administrador de la aplicación se encargara de crear usuarios.
+
+La aplicación cuenta con seguridad por lo que al no registrarse no se mostraran las pantallas anteriormente descritas. 
+
